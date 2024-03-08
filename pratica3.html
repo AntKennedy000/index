@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página com Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Minha Atividade Prática 3</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <section>
+            <h2>Seção 1: HTML</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum elit, id ullamcorper arcu.</p>
+        </section>
+
+        <section>
+            <h2>Seção 2: Bootstraps</h2>
+            <p>Integer placerat, libero vel faucibus dapibus, leo mi ultricies urna, ut molestie enim mi a lorem.</p>
+        </section>
+
+        <section>
+            <h2>Seção 3: Containers</h2>
+            <p>Vivamus nec dui in elit aliquam pharetra non eget quam. Integer ut ex convallis, hendrerit lacus at, volutpat lacus.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; <span id="year"></span> AntKennedy. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
